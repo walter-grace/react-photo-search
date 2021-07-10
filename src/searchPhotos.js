@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Unsplash, { toJson } from "unsplash-js";
+import SweetButton from "./AwesomeButton";
 
 const unsplash = new Unsplash({
   accessKey: "D8vIQoMabvpMf2xDTQS5yEE-KRhLpxAk-AGye_cySY8",
@@ -35,13 +36,11 @@ export default function SearchPhotos() {
           type="text"
           name="query"
           className="input"
-          placeholder={`Try "dog" or "apple"`}
+          placeholder={`Try "cat" or "space"`}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        <button type="submit" className="button">
-          Search
-        </button>
+        <SweetButton />
       </form>
 
       <div className="card-list">
