@@ -5,7 +5,7 @@ import "react-awesome-button/dist/styles.css";
 function SweetButton() {
   return (
     <AwesomeButton size="small" type="link">
-     🔎
+     SEARCH
     </AwesomeButton>
   );
 }
